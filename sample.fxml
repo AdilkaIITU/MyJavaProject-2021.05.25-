@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SceneController">
+   <children>
+      <AnchorPane layoutY="111.0" prefHeight="295.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+         <children>
+            <Button fx:id="btnScene3" layoutX="225.0" layoutY="167.0" mnemonicParsing="false" onAction="#switchToScene3" prefHeight="38.0" prefWidth="149.0" style="-fx-background-color: #FFA500;" text="Your Final Grade">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnScene2" layoutX="225.0" layoutY="111.0" mnemonicParsing="false" onAction="#switchToScene2" style="-fx-background-color: #FFA500;" text="Body Mass Index">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnScene1" layoutX="225.0" layoutY="50.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #FFA500;" text="Calculator">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="104.0" fitWidth="164.0" layoutX="87.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@calculator.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="149.0" layoutX="248.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bmi.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="119.0" layoutX="408.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@grade.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
